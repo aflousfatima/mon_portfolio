@@ -1,0 +1,73 @@
+.experience-section {
+    color: #e6edf3;
+    padding: 60px 20px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.3rem;
+    font-weight: 600;
+    color: #ffffff;
+  }
+  
+  .section-subtitle {
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-align: center;
+    max-width:80%;
+    margin-bottom: 2.5rem;
+    }
+
+  .experience-card {
+    border-left: 5px solid #00d1b2;
+    padding: 25px 30px;
+    border-radius: 12px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    box-shadow: 0 4px 20px rgba(0, 209, 178, 0.1);
+  }
+  
+  .experience-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .experience-icon {
+    width:50px;
+    height:50px;
+    background: #ffffff;
+    padding: 2px;
+    box-shadow: 0 0 8px rgba(0, 209, 178, 0.3);
+  }
+  
+  .company-name {
+    font-size: 0.95rem;
+    color: #57ffee;
+    margin-top: -20px;
+  }
+  
+  .experience-details ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  .experience-details li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+  }
+  
+  .experience-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    color: #57ffee;
+    flex-wrap: wrap;
+    gap: 10px;
+  }

@@ -1,0 +1,118 @@
+
+.pipeline-horizontal-section {
+    padding: 5rem 2rem;
+    color: #e5eaf5;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    position: relative;
+  }
+  
+  .pipeline-horizontal-header {
+    margin-top: 20px;
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-align: center; /* <-- AJOUTE ÇA */
+  }
+  
+  
+  .brief_subtitle {
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+  
+  /* Container des étapes */
+  .pipeline-horizontal-steps {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    z-index: 2;
+    padding: 0 3rem;
+  }
+  
+  /* Étape individuelle */
+  .pipeline-step {
+    width: 220px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Icône en cercle */
+  .pipeline-icon {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 2px solid #58c3bc;
+    background-color: #17120d;
+    color: #58c3bc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.3rem;
+    box-shadow: 0 0 10px rgba(88, 195, 188, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .pipeline-step:hover .pipeline-icon {
+    transform: scale(1.08);
+    box-shadow: 0 0 16px rgba(88, 195, 188, 0.5);
+  }
+  
+  /* Titre de l’étape */
+  .pipeline-title {
+    font-weight: 600;
+    font-size: 1.15rem;
+    margin-top: 1rem;
+    color: #ffffff;
+  }
+  
+  /* Description */
+  .pipeline-description {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ffffff;
+    margin-top: 0.4rem;
+    max-width: 100%;
+  }
+  
+  /* Ligne entre les étapes */
+  .pipeline-step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 37px;
+    left: 63%;
+    width: 300px; /* ← AUGMENTE ICI pour ajuster la longueur */
+    height: 2px;
+    background: linear-gradient(to right, #58c3bc, transparent);
+    opacity: 0.5;
+    border-radius: 2px;
+    z-index: 1;
+    margin-left: 10px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 900px) {
+    .pipeline-horizontal-steps {
+      flex-direction: column;
+      align-items: center;
+      gap: 3rem;
+    }
+  
+    .pipeline-step:not(:last-child)::after {
+      display: none;
+    }
+  
+    .pipeline-icon {
+      width: 65px;
+      height: 65px;
+      font-size: 1.9rem;
+    }
+  }
+  

@@ -1,0 +1,38 @@
+.app-container {
+  min-height: 100vh;
+  background: #141414;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  overflow-x: hidden;
+  display: block; /* Flux vertical naturel */
+  margin: 0;
+  padding: 0;
+}
+
+.app-container > * {
+  margin: 0; /* Supprime les marges par défaut */
+  padding: 0;
+}
+
+/* Cible spécifiquement l'espace entre Body et ProfessionalSummary */
+.app-container > :nth-child(2) + :nth-child(3) {
+  margin-top: -50px !important; /* Ajuste cette valeur pour réduire l'espace */
+  padding-top: 20px; /* Espace de sécurité */
+}
+
+/* Espacement général pour les autres sections (facultatif) */
+.app-container > *:not(:first-child):not(:nth-child(3)) {
+  margin-top: 40px; /* Espacement standard pour les autres transitions */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .app-container > :nth-child(2) + :nth-child(3) {
+    margin-top: -30px !important;
+    padding-top: 10px;
+  }
+  .app-container > *:not(:first-child):not(:nth-child(3)) {
+    margin-top: 20px;
+  }
+}

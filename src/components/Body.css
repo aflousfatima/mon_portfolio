@@ -1,0 +1,231 @@
+
+.body {
+    position: relative;
+    background: #141414;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Sépare l'image et le texte aux extrémités */
+    padding: 100px 20px 20px; /* Espace pour le header et les côtés */
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .content-container {
+    display: flex;
+    align-items: center;
+    width: 70%; /* Limite la largeur du contenu */
+    margin-left: 20px; /* Aligne à gauche */
+  }
+  
+  .image-container {
+    position: relative;
+    margin-right: 20px; /* Espacement avec le texte */
+  }
+  
+  .profile-image {
+    border-radius: 15px;
+    animation: float 5s ease-in-out infinite;
+    margin-top: -310px;
+    margin-left:-100px;
+  }
+  
+  .welcome-section {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    padding: 20px;
+    text-align: left; /* Texte à l'extrémité gauche */
+    margin-left:-650px;
+    margin-top:-200px;
+  }
+  
+  .welcome-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size:4.3rem;
+    color: #ffffff;
+    text-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+    letter-spacing: 2px;
+    animation: fadeInDown 1.2s ease-out;
+    margin-bottom: 20px;
+  }
+  
+  .highlight {
+    color: #00ffff;
+    text-shadow: 0 0 8px #00ffff;
+  }
+  .hello{
+    margin-left:80px;
+  }
+  
+  .welcome-text {
+    font-size: 0.9rem;
+    color: #dddddd;
+    line-height: 1.8;
+    animation: fadeInUp 1.5s ease-out;
+  }
+  
+  .typing-text {
+    font-size: 1.5rem;
+    font-family: 'Orbitron', sans-serif;
+    color: #ffffff;
+    letter-spacing: 1px;
+  }
+  
+  .cursor {
+    display: inline-block;
+    width: 1ch;
+    animation: blink 0.7s infinite;
+    color: #00ffff;
+  }
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  
+  .cta-button {
+    background: #00ffff;
+    color: #141414;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: 'Orbitron', sans-serif;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background: #00bfff;
+  }
+  
+  @keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-50px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink {
+    0%, 100% { border-color: transparent }
+    50% { border-color: #00ffff }
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .body {
+      flex-direction: column;
+      padding: 100px 10px 20px;
+    }
+    .image2 {
+      position: static;
+      transform: none;
+      margin: 20px auto;
+    }
+    .content-container {
+      flex-direction: column;
+      margin-left: 0;
+      width: 100%;
+    }
+    .image-container {
+      margin-right: 0;
+      text-align: center;
+    }
+    .welcome-section {
+      text-align: center;
+      margin-left: 0;
+    }
+    .welcome-title {
+      font-size: 2.5rem;
+    }
+    .welcome-text {
+      font-size: 1rem;
+    }
+    .cta-button {
+      padding: 10px 20px;
+    }
+  }
+
+
+
+  .image2-container {
+    position: absolute;
+    top: 45%;
+    right: 50px;
+    transform: translateY(-50%);
+    width: 400px;
+    height: 400px;
+    z-index: 1;
+    animation: floatIn 1.5s ease-out forwards;
+    opacity: 0;
+  }
+  
+  .image2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 10px 25px rgba(0, 255, 255, 0.3);
+    position: relative;
+  }
+  
+  /* Lignes abstraites */
+  .image2-container::before,
+  .image2-container::after {
+    content: '';
+    position: absolute;
+    border: 2px solid #00ffff;
+    opacity: 0.4;
+    z-index: -1;
+    pointer-events: none;
+    transform: rotate(15deg);
+    margin-top:15px;
+    margin-right:15px;
+  }
+  
+  .image2-container::before {
+    width: 100%;
+    height: 100%;
+    top: -20px;
+    left: -20px;
+    border-radius: 20% 50% 30% 40%;
+  }
+  
+  .image2-container::after {
+    width: 90%;
+    height: 90%;
+    bottom: -25px;
+    right: -25px;
+    border-radius: 60% 20% 40% 30%;
+    transform: rotate(-10deg);
+  }
+  
+  /* Animation d’entrée */
+  @keyframes floatIn {
+    0% {
+      transform: translateY(-60%) translateX(20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(-50%) translateX(0);
+      opacity: 1;
+    }
+  }
+  
