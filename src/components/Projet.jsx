@@ -62,7 +62,7 @@ const projectsData = [
     description:
       'Simulated brute-force attacks using DVWA and OpenBullet2, with real-time detection via Wazuh and automated blocking using Fail2Ban.',
     tech: ['DVWA', 'Burp Suite', 'OpenBullet2', 'Wazuh', 'Fail2Ban'],
-    images: ['/security_project.png', '/security_project2.png'], // Multiple images
+    images: ['/security_project.png'], // Multiple images
     github: '#',
     demo: '#',
   },
@@ -73,7 +73,7 @@ const projectsData = [
     description:
       'End-to-end CI/CD pipeline with Jenkins, SonarQube, Docker, and Ansible, enabling quality checks, containerization, and automated deployment.',
     tech: ['Jenkins', 'SonarQube', 'Docker', 'Ansible', 'Slack'],
-    images: ['/devops_pipeline1.png', '/devops_pipeline1.2.png'], // Multiple images
+    images: ['/devops_pipeline1.png'], // Multiple images
     github: 'https://github.com/fatimaaflous/Gestion_De_Laboratoire',
     demo: '#',
   },
@@ -84,7 +84,7 @@ const projectsData = [
     description:
       'A full-stack restaurant system based on microservices with REST, GraphQL, RabbitMQ, and multi-tech stack. Real-time notification, online payment, and CI-friendly architecture.',
     tech: ['Spring Boot', 'Flask', 'ASP.NET', 'RabbitMQ', 'MongoDB', 'MySQL', 'PostgreSQL', 'Stripe'],
-    images: ['/devops_pipeline2.png', '/devops_pipeline2.2.png'], // Multiple images
+    images: ['/devops_pipeline2.png'], // Multiple images
     github: 'https://github.com/fatimaaflous/Gestion_De_Restaurant',
     demo: '#',
   },
@@ -95,7 +95,7 @@ const projectsData = [
     description:
       'A GitHub Actions workflow for containerizing and deploying Java apps to AWS using ECR and ECS, with environment detection and secure credentials handling.',
     tech: ['Docker', 'AWS', 'ECR', 'GitHub Actions'],
-    images: ['/cloud1.png', '/cloud1.2.png'], // Multiple images
+    images: ['/cloud1.png'], // Multiple images
     github: 'https://github.com/aflousfatima/deploy_on_aws',
     demo: '#',
   },
@@ -106,7 +106,7 @@ const projectsData = [
     description:
       'A complete DevSecOps pipeline including GitHub Actions, Snyk, Trivy, Cosign, in-toto, SonarCloud, Nexus, and OWASP ZAP integrated with Kubernetes and monitored by Grafana & Prometheus.',
     tech: ['GitHub Actions', 'Docker', 'Snyk', 'Trivy', 'Cosign', 'in-toto', 'SonarQube', 'Nexus', 'Kubernetes'],
-    images: ['/pipeline2.png', '/pipeline2.2.png'], // Multiple images
+    images: ['/pipeline2.png'], // Multiple images
     github: 'https://github.com/aflousfatima/gestion_projet/blob/main/.github/workflows/ci.yml',
     demo: '#',
   },
